@@ -35,7 +35,7 @@ const Home = ({navigation})=>{
     const verifyTok = async ()=>{
         const token = await AsyncStorage.getItem('token')
         // console.log(token)
-            await  fetch("http://10.0.2.2:3000/api/get",{
+            await  fetch("http://10.0.2.2:3000/posts",{
                 method: "GET",
                 headers:{
                     'Content-Type': "application/json",
